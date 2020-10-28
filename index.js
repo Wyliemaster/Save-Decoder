@@ -2,11 +2,11 @@ const zlib = require('zlib')
 const fs = require('fs')
 
 function Xor(key, string){
-        result = '';
-        for (var index = 0; index < string.length; index++) {
-          var input = string.charCodeAt(index);
+      result = '';
+      for (var index = 0; index < string.length; index++) {
+      var input = string.charCodeAt(index);
       result += String.fromCharCode(input ^ key);
-        }
+}
       return result;
 }
 
@@ -20,15 +20,13 @@ function decodeSave(fileName){
 }
 
 function encodeSave(fileName) {
-  data = fs.readFileSync(__dirname + '/' + fileName, "utf8");
+  data = fs.readFileSync(__dirname + '/' + fileName, "utf8"); //txt, xml, etc...
   zipped = zlib.gzipSync(data, 'base64')
   base64 = new Buffer.from(zipped, "utf-8").toString("base64")
   done = Xor(0xB, base64)
   fs.writeFileSync('CCGameManager.dat', done)
   return console.log('Save File Generated')
   }
-
-
 
   decodeSave(/*Please insert the name of your save file*/ )
 

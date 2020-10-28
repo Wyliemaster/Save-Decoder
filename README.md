@@ -1,6 +1,6 @@
 # Save Decoder/Encoder
 
-## what is needed?
+## What Is Needed?
 
 To Use this tool all you need is:
 
@@ -13,7 +13,7 @@ To Use this tool all you need is:
 
 - an IDE, [this is what i use](https://code.visualstudio.com/)
 
-## how to use
+## How To Use
 
 using this tool is very simple, all you need to do is place the file you want to decode/encode in the same directory as index.js
 

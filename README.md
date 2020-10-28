@@ -24,5 +24,5 @@ and then use the functions ive written
 ````js
   decodeSave(/*Please insert the name of your save file*/ )
 
-  encodeSave(/*Please insert the name of the file you want to encode*/ )```
+  encodeSave(/*Please insert the name of the file you want to encode*/ )
 ````

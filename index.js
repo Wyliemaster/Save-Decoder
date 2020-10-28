@@ -11,7 +11,7 @@ function Xor(key, string){
 }
 
 function decodeSave(fileName){
-    data = fs.readFileSync(__dirname + '/' + fileName, "utf-8") //CCGameManager or CCLocalLevels
+    data = fs.readFileSync(__dirname + '/' + fileName, "utf-8") //CCGameManager
     Xord = Xor(0xB, data)
     base64 = Buffer.from(Xord, 'base64')
     result = zlib.unzipSync(base64).toString()

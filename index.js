@@ -24,7 +24,7 @@ function encodeSave(fileName) {
   zipped = zlib.gzipSync(data, 'base64')
   base64 = new Buffer.from(zipped, "utf-8").toString("base64")
   done = Xor(0xB, base64)
-  fs.writeFileSync('CCGameManager2222.dat', done)
+  fs.writeFileSync('CCGameManager.dat', done)
   return console.log('Save File Generated')
   }
 

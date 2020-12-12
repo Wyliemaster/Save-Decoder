@@ -19,10 +19,8 @@ using this tool is very simple, all you need to do is place the file you want to
 
 ![example](https://media.discordapp.net/attachments/692142942856544288/771058089323266088/unknown.png)
 
-and then use the functions ive written
+and then use the function ive written
 
 ````js
   decodeSave(/*Please insert the name of your save file*/ )
-
-  encodeSave(/*Please insert the name of the file you want to encode*/ )
 ````

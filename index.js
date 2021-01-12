@@ -46,3 +46,4 @@ Encoding saves is broken :( will fix soon
 */
 
 decodeSave('CCGameManager.dat')
+decodeLevel('level.txt')

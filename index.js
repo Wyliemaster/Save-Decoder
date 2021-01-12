@@ -21,6 +21,15 @@ function decodeSave(fileName) {
     return console.log(Xord)
 }
 
+function decodeLevel(fileName) {
+    data = fs.readFileSync(__dirname + '/' + fileName, "utf-8") // Reads file and stores it in data 
+    base64 = data.replace(/\+/g, '-')
+    base64 = base64.replace(/\//g, '_')
+    base64 = Buffer.from(base64, 'base64') //buffers it from base64
+    result = zlib.gunzipSync(base64).toString() //unzips with Gzip
+    fs.writeFileSync(fileName + ' - decoded.xml', result) //writes a file with the unzipped file
+}
+
 /*function encodeSave(fileName) {
     data = fs.readFileSync(__dirname + '/' + fileName, "utf8");
     zipped = zlib.gzipSync(data, 'base64')

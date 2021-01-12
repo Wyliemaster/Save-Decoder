@@ -19,8 +19,9 @@ using this tool is very simple, all you need to do is place the file you want to
 
 ![example](https://media.discordapp.net/attachments/692142942856544288/771058089323266088/unknown.png)
 
-and then use the function ive written
+Functions currently useable:
 
 ````js
   decodeSave(/*Please insert the name of your save file*/ )
+  decodeLevel(/*Please insert the name of the file with your level string*/ )
 ````
